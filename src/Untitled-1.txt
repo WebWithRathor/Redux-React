@@ -1,0 +1,9 @@
+store -> where the main data is stored in the form of Object
+reducer -> where number of data is store in objects for example UserActivation, products data and then they are combined and send to store
+slice -> every object means data stored in reducer is known as slice and also called initial state
+
+so cycle 
+
+reducer -> slice -> combine data and send to store -> access in components by useSelector((=>{})) --> updated by udpate action or manipulate data by the action's
+
+store se pure app ko cover krte h jo ki ek data k copy jo reducers m hota h toh use accses krte h or manipulate reducer se
