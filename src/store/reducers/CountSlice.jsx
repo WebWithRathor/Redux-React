@@ -10,9 +10,15 @@ const CountSlice = createSlice({
     reducers:{
         increase:(state,action)=>{
             state.value = action.payload;
-        }
+        },
+        asyncincrease:(state,action)=>{
+            state.value = action.payload;
+        },
+        decrease:(state,action)=>{
+            state.value = action.payload;
+        },
     }
 })
 
 export default CountSlice.reducer;
-export const {increase} = CountSlice.actions;
+export const {increase,decrease,asyncincrease} = CountSlice.actions;
