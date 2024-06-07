@@ -1,18 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    Name : "No Name"
+    Name : "anjaan"
 }
 
 const inputSlice = createSlice({
     name:"Count",
     initialState,
     reducers:{
-        change:(state,action)=>{
+        InputName:(state,action)=>{
             state.Name = action.payload;
         }
     }
 })
 
 export default inputSlice.reducer;
-export const {change} = inputSlice.actions;
+export const {InputName} = inputSlice.actions;
